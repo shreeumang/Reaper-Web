@@ -1,0 +1,21 @@
+<body id="bg">
+  <div class="header">
+    <h1><img src="assets/logo.png" alt="FilesApi" width="100px">FilesApi</h1>
+  </div>
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-12" >
+        <div class="card bg-dark my-5" id="div">
+          <div class="card-body" id="card">
+            <ul class="text-center list-inline py-3">
+              <li class="list-inline-item">
+                <a routerLink ="/ApiApplication/ListFiles" class="btn btn-info" id="btn">List Files</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</body>

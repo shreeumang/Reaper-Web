@@ -1,0 +1,40 @@
+
+#user {
+    /* background-color: #1c2413; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-collapse: collapse;
+    }
+ 
+
+#user td, #user th {
+    border: 1px solid rgba(73, 71, 71, 0.692);
+    padding: 8px; 
+}
+
+#user tr:hover{background-color: rgb(68, 140, 161);
+    color:black;
+}
+#user tr{
+    text-align: center;
+    color: #D8AC59;
+}
+#user th {
+    text-align: center;
+    color: white;
+} 
+#table{
+    background-color: #35363a;
+}
+#thead{
+    background-color: #1c2413
+}
+#tbody{
+    background-color: #282828;
+}
+#a{
+    color: #D8AC59;
+    text-decoration: none;
+}
+#a:hover{
+    color: black;
+}

@@ -1,0 +1,20 @@
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="6">Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let list of listdata; let i = index">
+            <td class="first-col">{{list?.name}}</td>
+            <td class="second-col">{{list?.type}}</td>
+            <!-- <td class="third-col">{{list?.autoDelete=="true"?'Active':'InActive'}}</td> -->
+            <td class="last-col">{{list?.durability}}</td>
+            <td style="width: 15px"><div (click)="onOpenModal(list, 'edit')"><i class="fa fa-pencil"></i></div></td>
+            <td><div (click)="onOpenModal(list, 'delete')"><i class="fa fa-trash"></i></div></td>
+        </tr>
+    </tbody>
+</table>
+<add-edit [listdata]="listdata"></add-edit>

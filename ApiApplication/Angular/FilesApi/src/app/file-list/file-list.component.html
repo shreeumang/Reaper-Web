@@ -1,0 +1,22 @@
+<div class="card my-5" id="table">
+  <div class="card-body">
+  <table class="table table-bordered table-striped" id="user">
+    <thead class="thead-dark">
+      <tr id="thead">
+        <th scope="col">#</th>
+        <th scope="col">File-Name</th>
+        <th scope="col">Extension</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+          <tr *ngFor="let file of files">
+            <td>{{ file.index }}</td>
+            <td><a routerLink="" id="a">{{ file.fname }}</a></td>
+            <td>{{ file.extension }}</td>
+            <!-- <td><a href="mailto:{{ user.email }}">{{ user.email }}</a></td> -->
+          </tr>
+        </tbody>
+      </table>
+    
+    </div>
+  </div>

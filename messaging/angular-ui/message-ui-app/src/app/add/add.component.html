@@ -1,0 +1,104 @@
+<div class="uc-modal" id="addMessageModal" *ngIf="showModal === 1">
+  <div class="uc-m-content">
+      <div class="uc-m-header">
+          <h4>Add Queue</h4>
+      </div>
+      <div class="uc-m-body">
+          <form [formGroup]="userForm" (ngSubmit)="addItem()">
+              <div class="form-div">
+                  <div class="form-name">
+                      <label>Name: </label>
+                      <input type="text" formControlName="name">
+                  </div>
+
+                  <div>
+                    <input type="hidden" formControlName="name">
+                  </div>
+
+                  <div class="form-type">
+                      <label>Type: </label>
+                      <select id="types" formControlName="type" [(ngModel)]="type[0].name">
+                          <option *ngFor="let ty of type; let i = index" [value]="type[i].name">{{type[i].name}}</option>
+                      </select>
+                  </div>
+
+                  <div class="form-durability">
+                      <label>Durability: </label>
+                      <select id="durability" formControlName="durability" [(ngModel)]="durability[0].name">
+                        <option *ngFor="let durable of durability; let i = index" [value]="durability[i].name">{{durability[i].name}}</option>
+                      </select>
+                  </div>
+
+                  <div class="form-delete">
+                      <label>Auto Delete: </label>
+                          <input type="checkbox" class="check" formControlName="autoDelete">
+                  </div>
+            </div>
+          </form>
+      </div>
+
+      <div class="uc-m-footer">
+          <button (click)="addItem()" class="btn-dialog">Save</button>
+          <button (click)="close()" class="btn-dialog">Cancel</button>
+      </div>
+  </div>
+</div>
+
+<div class="uc-modal" id="deleteMessageModal" *ngIf="showModal === 2">
+  <div class="uc-m-content2">
+      <div class="uc-m-header">
+          <h4>Delete Queue</h4>
+      </div>
+      <div class="uc-m-body">
+        <p class="uc-m-text">Are you sure you want to delete [{{editMessage?.name}}]?</p>
+      </div>
+      <div class="uc-m-footer-2">
+          <button (click)="deleteList()" class="btn-dialog">Save</button>
+          <button (click)="close()" class="btn-dialog">Cancel</button>
+      </div>
+  </div>
+</div>
+
+
+<div class="uc-modal" id="updateMessageModal" *ngIf="showModal === 3">
+  <div class="uc-m-content">
+      <div class="uc-m-header">
+          <h4>Add Queue</h4>
+      </div>
+      <div class="uc-m-body">
+          <form [formGroup]="userForm">
+              <div class="form-div">
+                  <div class="form-name">
+                      <label>Name: </label>
+                      <input type="text" formControlName="name">
+                  </div>
+
+                  <div class="form-type">
+                      <label>Type: </label>
+                      <select id="types" formControlName="type">
+                          <option *ngFor="let ty of type; let i = index" [value]="type[i].name">{{type[i].name}}</option>
+                      </select>
+                  </div>
+
+                  <div class="form-durability">
+                      <label>Durability: </label>
+                      <select id="durability" formControlName="durability">
+                        <option *ngFor="let durable of durability; let i = index" [value]="durability[i].name">{{durability[i].name}}</option>
+                      </select>
+                  </div>
+
+                  <div class="form-delete">
+                      <label>Auto Delete: </label>
+                          <input type="checkbox" class="check" formControlName="autoDelete">
+                  </div>
+            </div>
+          </form>
+      </div>
+
+      <div class="uc-m-footer">
+          <button (click)="onUpdateMessage(editMessage)" class="btn-dialog">Save</button>
+          <button (click)="close()" class="btn-dialog">Cancel</button>
+      </div>
+  </div>
+</div>
+

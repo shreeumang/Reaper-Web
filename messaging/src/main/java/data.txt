@@ -1,0 +1,13 @@
+{
+        "name": "Message One",
+        "type": "type 1",
+        "durability": "durable",
+        "autoDelete": "true"
+}
+
+{
+        "name": "Message Two",
+        "type": "type 2",
+        "durability": "Qourum",
+        "autoDelete": "false"
+}

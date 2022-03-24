@@ -1,0 +1,17 @@
+#bg{
+    background-color: #202124;
+}
+#card{
+    background-color: #35363a;
+    /* padding-top: 0px; */
+    padding-bottom: 7px;
+}
+.header {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    text-align: center;
+    /* background: #1abc9c; */
+    color: whitesmoke;
+    font-size: 30px;
+    margin-bottom: 0rem;
+}

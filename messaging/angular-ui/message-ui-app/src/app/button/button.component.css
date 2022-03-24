@@ -1,0 +1,14 @@
+.add {
+  width: 106px;
+  height: 24px;
+  border-radius: 6px;
+  background-color: #68656B;
+  background-size: cover;
+  font-family: Verdana;
+  font-size: 14px;
+  border: none;
+  color: #ffffff;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+  margin-right: 9px;
+}

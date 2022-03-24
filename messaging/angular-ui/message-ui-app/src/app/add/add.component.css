@@ -1,0 +1,142 @@
+.uc-modal {
+  position: fixed;
+  background-color: rgba(40,36,43,0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.uc-m-content {
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 598px;
+  height: 376px;
+  border-radius: 4px;
+  fill: #ffffff;
+}
+
+.uc-m-content2 {
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 598px;
+  height: 217px;
+  border-radius: 4px;
+  fill: #ffffff;
+}
+
+.uc-m-header {
+  background-color: #3592cd;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  height: 46px;
+  text-decoration: none solid rgb(255, 255, 255);
+}
+
+.uc-m-header h4 {
+  padding: 12px;
+  margin: 0px;
+}
+
+.uc-m-footer {
+  margin: 0;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn-dialog {
+  width: 106px;
+  height: 24px;
+  border-radius: 6px;
+  background-image: linear-gradient(0deg, #e3733b 0%, #ff7f41 100% );
+  background-position: center center;
+  background-size: cover;
+  font-family: Verdana;
+  font-size: 14px;
+  color: #ffffff;
+  margin-right: 20px;
+  border: none;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+}
+
+.uc-m-body {
+font-family: Arial;
+font-size: 14px;
+display: inline-block;
+}
+
+input {
+  width: 191px;
+  height: 30px;
+  margin: 10px;
+  padding: 0px 8px;
+  border: 1px solid #8c8c8c;
+  border-radius: 4px;
+  background-color: #ffffff;
+  background-size: cover;
+  color: #121212;
+  text-decoration: none solid rgb(18, 18, 18);
+}
+
+select {
+  width: 210px;
+  height: 30px;
+  padding: 0px 8px;
+  margin: 10px;
+  border: 1px solid #8c8c8c;
+  border-radius: 4px;
+  font-family: Arial;
+  font-size: 14px;
+  color: #121212;
+  text-decoration: none solid rgb(18, 18, 18);
+}
+
+.check {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+  stroke-width: 1;
+}
+
+/* .form-div {
+  text-align: right;
+} */
+
+label {
+  display: inline-block;
+  clear: left;
+  width: 150px;
+  text-align: right;
+}
+
+input select {
+  margin-right: 127px;
+  display: inline-block;
+}
+
+.uc-m-text {
+  font-family: Arial;
+  font-size: 14px;
+  padding: 24px;
+}
+
+
+.uc-m-footer-2 {
+  margin: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
